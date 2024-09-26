@@ -24,10 +24,12 @@ public class AdminConsole
 						
 		//epsweb webpage
 		driver.get("https://epsweb.adminconsole.net/");
-		driver.findElement(By.name("EmailId")).sendKeys("amey@npav.net");
-		driver.findElement(By.name("Password")).sendKeys("npav1");
+		driver.findElement(By.name("EmailId")).sendKeys("santoshs@npav.net");
+		driver.findElement(By.name("Password")).sendKeys("cclm789");
 		driver.findElement(By.id("btnSubmit")).click();
-				
+		thread.sleep(5000);
+		driver.findElement(By.xpath("/html/body/div[2]/header/nav/div[1]/ul/li/[i]/a/i")).click();
+		driver.findElement(By.xpath("/html/body/div[2]/aside/section/ul/li[2]/a/svg")).click();
 	}
 
 }
