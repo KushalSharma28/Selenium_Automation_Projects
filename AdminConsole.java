@@ -36,6 +36,15 @@ public class AdminConsole
 
 		//select key-details tab
 		driver.findElement(By.xpath("/html/body/div[2]/aside/section/ul/li[2]/a/span")).click();
+
+		// search the user in key details
+		driver.findElement(By.xpath("//*[@id=\"tblKeyDet_filter\"]/label/input")).sendKeys("kushal");
+		
+		driver.findElement(By.xpath("//*[@id=\"V-EFCA8EA698\"]")).click();
+		
+		// logout from profile Menu
+		//driver.findElement(By.xpath("//*[@id="menuss"]")).click();
+		//driver.findElement(By.xpath("//*[@id="menuss"]/li/a[5]/i")).click();
 	}
 
 }
