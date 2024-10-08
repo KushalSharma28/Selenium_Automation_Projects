@@ -41,7 +41,12 @@ public class AdminConsole
 		driver.findElement(By.xpath("//*[@id=\"tblKeyDet_filter\"]/label/input")).sendKeys("kushal");
 		
 		driver.findElement(By.xpath("//*[@id=\"V-EFCA8EA698\"]")).click();
-		
+		WebElement checkBox = driver.findElement(By.id("V-EFCA8EA698")); 
+		if (!checkBox.isSelected()) 
+		{ 
+			checkBox.setSelected(true); 
+		}
+													     }
 		// logout from profile Menu
 		//driver.findElement(By.xpath("//*[@id="menuss"]")).click();
 		//driver.findElement(By.xpath("//*[@id="menuss"]/li/a[5]/i")).click();
