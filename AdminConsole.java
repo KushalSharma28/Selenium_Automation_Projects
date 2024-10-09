@@ -40,13 +40,25 @@ public class AdminConsole
 		// search the user in key details
 		driver.findElement(By.xpath("//*[@id=\"tblKeyDet_filter\"]/label/input")).sendKeys("kushal");
 		
-		driver.findElement(By.xpath("//*[@id=\"V-EFCA8EA698\"]")).click();
-		WebElement checkBox = driver.findElement(By.id("V-EFCA8EA698")); 
-		if (!checkBox.isSelected()) 
-		{ 
-			checkBox.setSelected(true); 
-		}
-													     }
+		// driver.findElement(By.xpath("//*[@id=\"V-EFCA8EA698\"]")).click();
+		// WebElement checkBox = driver.findElement(By.id("V-EFCA8EA698")); 
+		// if (!checkBox.isSelected()) 
+		// { 
+			// checkBox.setSelected(true); 
+		// }
+		// using wekelement method to click on checkbox element
+
+// WebElement checkbox = driver.findElement(By.id("V-EFCA8EA698")); //[@type='checkbox'] //checkbox.click();
+
+//using JavaScriptExecutor to click on checkbox element 
+		//JavascriptExecutor is (JavascriptExecutor) driver;
+
+//js.executeScript("document.getElementById('V-EFCA8EA698').click()");
+
+// Using action class to click on checkbox element 
+		Actions actions new Actions(driver);
+
+actions.click(driver.findElement(By.id("V-EFCASEA698"))).perform();											     }
 		// logout from profile Menu
 		//driver.findElement(By.xpath("//*[@id="menuss"]")).click();
 		//driver.findElement(By.xpath("//*[@id="menuss"]/li/a[5]/i")).click();
