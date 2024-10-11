@@ -38,27 +38,39 @@ public class AdminConsole
 		driver.findElement(By.xpath("/html/body/div[2]/aside/section/ul/li[2]/a/span")).click();
 
 		// search the user in key details
-		driver.findElement(By.xpath("//*[@id=\"tblKeyDet_filter\"]/label/input")).sendKeys("kushal");
+		driver.findElement(By.xpath("//*[@id=\"tblKeyDet_filter\"]/label/input")).sendKeys("V-EFCA8EA698");
+		driver.findElement(By.cssSelector(".#tblKeyDet_filter")).sendKeys("V-EFCA8EA698");
+
+		// Select Key using checkbox		
+		Thread.sleep(3000);
+		driver.findElement(By.cssSelector(".SelectedChk")).click();
+
+		// Select Policy for Key
+		
+		//driver.findElement(By.cssSelector(".select2-selection__arrow")).click();
+	    	driver.findElement(By.id("select2-ddlpolicy-container")).click();
+	    
+		//WebElement element = driver.findElement(By.id("select2-ddlpolicy-container"));
+		//element.click();
+		//element.sendKeys("KushalS Null Policy");
+	    
+		//driver.findElement(By.id("select2-ddlpolicy-container")).text("KushalS Null Policy");
+		driver.findElement(By.cssSelector("select2-search__field")).sendKeys("KushalS Null Policy");
+		
+		
+		//select2-ddlpolicy-result-ib7e-1209
+		
+		// logout from profile Menu
+		//driver.findElement(By.id("imagelogout")).click();
+		//Thread.sleep(3000);
+		//driver.findElement(By.cssSelector(".ti-lock.text-muted.mr-2")).click();
+	    
+	    Thread.sleep(3000);
+	    driver.close();
 		
 		// driver.findElement(By.xpath("//*[@id=\"V-EFCA8EA698\"]")).click();
 		// WebElement checkBox = driver.findElement(By.id("V-EFCA8EA698")); 
-		// if (!checkBox.isSelected()) 
-		// { 
-			// checkBox.setSelected(true); 
-		// }
-		// using wekelement method to click on checkbox element
-
-// WebElement checkbox = driver.findElement(By.id("V-EFCA8EA698")); //[@type='checkbox'] //checkbox.click();
-
-//using JavaScriptExecutor to click on checkbox element 
-		//JavascriptExecutor is (JavascriptExecutor) driver;
-
-//js.executeScript("document.getElementById('V-EFCA8EA698').click()");
-
-// Using action class to click on checkbox element 
-		Actions actions new Actions(driver);
-
-actions.click(driver.findElement(By.id("V-EFCASEA698"))).perform();											     }
+																     }
 		// logout from profile Menu
 		//driver.findElement(By.xpath("//*[@id="menuss"]")).click();
 		//driver.findElement(By.xpath("//*[@id="menuss"]/li/a[5]/i")).click();
