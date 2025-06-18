@@ -9,7 +9,7 @@ public class MainClass
 		WebDriver driver = DriverManager.getDriver();
 		
 		LoginPage loginPage = new LoginPage(driver);
-		loginPage.login("kushalsharmatester@gmail.com", "16161326");
+		loginPage.login("kushalsharmatester@gmail.com", "Npav@321");
 		Thread.sleep(5000);
 	
 		NavigationPage navigationPage = new NavigationPage(driver);
