@@ -14,8 +14,7 @@
 6. [Test Reports](#test-reports)
 7. [CI/CD Integration](#cicd-integration)
 8. [Contributing](#contributing)
-9. [License](#license)
-
+9. [Contact](#conatct)
 ---
 
 ## 📖 About the Project
@@ -158,7 +157,7 @@ This project is integrated with **GitHub Actions** for:
 
 ## 🤝 Contributing
 
-We welcome contributions! Please follow the [CONTRIBUTING.md](CONTRIBUTING.md) guidelines.
+Feel free to fork the repo, raise issues, or submit pull requests for improvements and new test cases.
 
 ---
 
