@@ -1,14 +1,13 @@
-package WebsiteTesting;
+package SeleniumInterviewTesting;
+
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.WebElement;
-import java.util.List;
+import org.openqa.selenium.chrome.ChromeDriver;
 
-public class DynamicDrop 
-{
-
+public class DynamicDropdownHandle {
 	public static void main(String[] args) throws InterruptedException
 	{
 		System.setProperty("webdriver.chrome.driver", "D:/Supporting files/chromedriver.exe");
@@ -35,5 +34,4 @@ public class DynamicDrop
         // Close the driver
        // driver.quit();
 	}
-
 }
