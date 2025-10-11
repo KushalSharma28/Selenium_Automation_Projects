@@ -7,13 +7,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class DynamicDropdownHandle {
+public class DynamicDropdownHandle 
+{
 	public static void main(String[] args) throws InterruptedException
 	{
 		System.setProperty("webdriver.chrome.driver", "D:/Supporting files/chromedriver.exe");
         
-        // Create a new instance of the Chrome driver
-        WebDriver driver = new ChromeDriver();
+        	// Create a new instance of the Chrome driver
+        	WebDriver driver = new ChromeDriver();
 
 		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 
@@ -24,14 +25,14 @@ public class DynamicDropdownHandle {
 		List<WebElement> options = driver.findElements(By.cssSelector("li[class='ui-menu-item']"));
 
 		for(WebElement option : options) 
-        {
-            if(option.getText().equalsIgnoreCase("India")) 
-            {
-                option.click();
-                break;
-            }
-        }
-        // Close the driver
-       // driver.quit();
+        	{
+            		if(option.getText().equalsIgnoreCase("India")) 
+            		{
+                		option.click();
+                		break;
+            		}
+        	}
+        	// Close the driver
+       		// driver.quit();
 	}
 }
