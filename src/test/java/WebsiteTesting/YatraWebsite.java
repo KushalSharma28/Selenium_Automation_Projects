@@ -11,7 +11,7 @@ public class YatraWebsite {
 
 	public static void main(String[] args) 
 	{
-		System.setProperty("webdriver.chrome.driver", "D:/Supporting files/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "D:/Supporting files/chromedriver.exe");
 
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-notifications");

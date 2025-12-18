@@ -13,7 +13,7 @@ public class TricentisDemoWebsite {
 
 	public static void main(String[] args) throws InterruptedException {
 		//driver define
-		System.setProperty("webdriver.chrome.driver", "D:/Supporting files/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "D:/Supporting files/chromedriver.exe");
         
         // Create a new instance of the Chrome driver
         WebDriver driver = new ChromeDriver();
@@ -26,6 +26,7 @@ public class TricentisDemoWebsite {
         
         //navigate to url
 		driver.get("https://demowebshop.tricentis.com/");
+		System.out.println("Navigate to Website Successfully");
 //		Thread.sleep(2000);
 //		driver.findElement(By.className("ico-register")).click();
 		
@@ -51,14 +52,17 @@ public class TricentisDemoWebsite {
 		// Wait until register link is clickable and click
         WebElement loginLink = wait.until(ExpectedConditions.elementToBeClickable(By.className("ico-login")));
         loginLink.click();
+        System.out.println("Click on login Button Sucessfully");
 		
 		//login
 		driver.findElement(By.id("Email")).sendKeys("kushalsharmatester@gmail.com");
 		driver.findElement(By.id("Password")).sendKeys("kushal@123");
 		driver.findElement(By.xpath("(//input[@value='Log in'])[1]")).click();
+		System.out.println("Login Successfully Done");
 		
 		// Wait for registration to complete (e.g., wait for logout button to appear or confirmation message)
         wait.until(ExpectedConditions.presenceOfElementLocated(By.className("ico-logout")));
+        System.out.println("Logout SUccessfully Done");
 		
 		//driver.quit();
 	}

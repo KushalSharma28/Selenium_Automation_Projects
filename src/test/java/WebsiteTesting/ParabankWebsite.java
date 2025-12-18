@@ -9,7 +9,7 @@ public class ParabankWebsite {
 
 	public static void main(String[] args) 
 	{
-		System.setProperty("webdriver.chrome.driver", "D:/Supporting files/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "D:/Supporting files/chromedriver.exe");
         
         // Create a new instance of the Chrome driver
         WebDriver driver = new ChromeDriver();
